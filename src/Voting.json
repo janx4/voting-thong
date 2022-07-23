@@ -1,0 +1,156 @@
+{
+    "address": "0xdB9F2602040D1b7A0F215D7B499aaBd916B20d53",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_title",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string[]",
+                    "name": "_elements",
+                    "type": "string[]"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_title",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string[]",
+                    "name": "_elements",
+                    "type": "string[]"
+                }
+            ],
+            "name": "createVote",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getAllVotes",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "title",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "creator",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string[]",
+                            "name": "names",
+                            "type": "string[]"
+                        },
+                        {
+                            "internalType": "uint256[]",
+                            "name": "numberOfVotes",
+                            "type": "uint256[]"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "done",
+                            "type": "bool"
+                        }
+                    ],
+                    "internalType": "struct voting.Vote[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getLength",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_idx",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getVote",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "title",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "creator",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "string[]",
+                            "name": "names",
+                            "type": "string[]"
+                        },
+                        {
+                            "internalType": "uint256[]",
+                            "name": "numberOfVotes",
+                            "type": "uint256[]"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "done",
+                            "type": "bool"
+                        }
+                    ],
+                    "internalType": "struct voting.Vote",
+                    "name": "",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "_key",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_voteKey",
+                    "type": "uint256"
+                }
+            ],
+            "name": "vote",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ]
+}
